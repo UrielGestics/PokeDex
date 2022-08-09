@@ -5,5 +5,8 @@
     }
 
 .tituloPokemon {
-    font-family: 'PokeFuente', sans-serif;
+    font-family: 'PokeFuente', sans-serif; 
+    color: #ffcc03;
+    -webkit-text-stroke: 2px  #3363AF;
+    
 }
