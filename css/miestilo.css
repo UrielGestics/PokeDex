@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'PokeFuente';
+    src: url('../fuentes/Pokemon-Solid.ttf') format('ttf'),
+    url('../fuentes/Pokemon-Hollow.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    }
+    .tituloPokemon {
+        font-family: 'PokeFuente', sans-serif;
+    }
