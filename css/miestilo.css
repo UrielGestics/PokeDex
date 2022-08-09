@@ -1,10 +1,9 @@
 @font-face {
-    font-family: 'PokeFuente';
-    src: url('../fuentes/Pokemon-Solid.ttf') format('ttf'),
-    url('../fuentes/Pokemon-Hollow.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
+    font-family: "PokeFuente";
+    src: url("../fuentes/Pokemon-Solid.ttf");
+    src: url("../fuentes/Pokemon-Solid.ttf") format("ttf"),
     }
-    .tituloPokemon {
-        font-family: 'PokeFuente', sans-serif;
-    }
+
+.tituloPokemon {
+    font-family: 'PokeFuente', sans-serif;
+}
