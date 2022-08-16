@@ -31,7 +31,7 @@ function obtenerPokemons (){
             let tp = '';
     fetch(url+'pokemon/'+pokemon.entry_number+'/').then( async (resp) => {
         let {types} = await resp.json();
- if(idx < 12){
+
         types.forEach(({type}) =>{
             let {clave} = tiposPokemon.find(data => data.tipo == type.name);
     
@@ -51,7 +51,7 @@ function obtenerPokemons (){
   </div>
 </div>`;
 ids.push(pokemon.entry_number);
-}
+
 document.getElementById("pokemonsCards").innerHTML = cards
     });
            
