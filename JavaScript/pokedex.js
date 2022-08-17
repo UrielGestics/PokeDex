@@ -164,7 +164,7 @@ $(window).on('scroll', function () {
 });
 
 dibujarTarjetas = (idx, name, tp) => `<div class="col">
-    <div class="card" id="CardID${idx}" >
+    <div class="card" id="CardID${idx}" onclick="abrirPokemon('${name}')" >
       <img  crossorigin="anonymous" id="PokemonID${idx}" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${idx}.png" class="card-img-top imagenPokemon" alt="...">
       <div class="card-body">
         <h5 class="card-title text-center">#${idx} ${capitalize(name)}</h5>
@@ -175,6 +175,10 @@ dibujarTarjetas = (idx, name, tp) => `<div class="col">
     </div>
   </div>`;
 
+
+function abrirPokemon(name) {
+    window.open("pokemon?name=" + name);
+}
 
 capitalize = (palabra) => {
     return palabra[0].toUpperCase() + palabra.slice(1).toLowerCase();
