@@ -7,25 +7,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/miestilo.css">
 </head>
 
-<body class="ms-5">
-    <br><br><br>
-    <h2>Name: Ivysaur</h2>
-    <br><br><br><br><br>
-    <span class="badge text-bg-primary mt-5">Grass</span>
-    <span class="badge text-bg-secondary mt-5">Poison</span>
-    <img crossorigin="anonymous" width="300" height="300"
-        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/2.png"
-        class="imagenPokemon ms-5" alt="...">
-    <canvas id="radarChart"></canvas>
-
+<body>
+    <div class="fixed-top" data-pag="inicio" id="barraNavRoja"></div>
+   <br>
+    <div id="CuerpoPokemonDatos" class="mt-5">
+        <div class="row  text-center" style="width: 99%;">
+          <div class="col">
+           <div id="DatosNombre">
+            <h1 class="mt-0 display-4 pokemon-name">
+                <small class="d-block">Name:</small>
+                <strong id="nombrePokemon"></strong>
+            </h1>
+           </div>
+           <div id="imagenPokemon" style="margin-top:120px">
+            <div id="typesPokemon"></div>
+            <img id="imagenPokemonMostrar" crossorigin="anonymous" width="300" height="300"
+                class="imagenPokemon ms-5" alt="...">
+           </div>
+          </div>
+          <div class="col">
+            <canvas style="width: 500px !important; height: 500px !important; " id="radarChart"></canvas>
+          </div>
+        </div>
+        <div class="mt-5"></div>
+        <div class="row text-center" style="width: 99%;">
+            <div class="col ms-5">
+                <h3>Abilities</h3>
+                <ul class="list-group" id="abilities"></ul>
+            </div>
+       
+        <div class="col">
+            <h3>Other details</h3>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Experience:</strong> <label id="pExperiencia"></label></li>
+                <li class="list-group-item"><strong>Weight:</strong> <label id="peso"></label></li>
+                <li class="list-group-item"><strong>Height:</strong> <label id="altura"></label></li>
+            </ul>
+        </div>
+    </div>
+      </div>
+      <script src="JavaScript/barraNav.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="JavaScript/vibrant.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-
-    <script src="JavaScript/mdb.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <script src="JavaScript/vibrant.js"></script>
+    <script src="JavaScript/funciones.js"></script>
     <script src="JavaScript/datosPokemon.js"></script>
 </body>
 
