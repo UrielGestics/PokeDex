@@ -1,11 +1,11 @@
-const url = `https://pokeapi.co/api/v2/`;
+const urlPeticion = `https://pokeapi.co/api/v2/`;
 let urlSiguiente = '';
 let ids = [];
 
 obtenerPokemons();
 function obtenerPokemons() {
     $("#mostrarOcultarTarjteas").hide();
-    fetch(url + 'pokemon?limit=12&order=1').then(async (resp) => {
+    fetch(urlPeticion + 'pokemon?limit=12&order=1').then(async (resp) => {
         let cards = '';
 
         let { results, next } = await resp.json();
@@ -14,7 +14,7 @@ function obtenerPokemons() {
             let tp = '';
             idx++;
 
-            fetch(url + 'pokemon/' + idx + '/').then(async (resp) => {
+            fetch(urlPeticion + 'pokemon/' + idx + '/').then(async (resp) => {
 
                 let { types } = await resp.json();
 
